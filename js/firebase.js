@@ -6,31 +6,17 @@ import {
   getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged, updatePassword
 } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-/* =========================================================
-   GANTI dengan config project Firebase kamu sendiri
-   (Firebase Console > Project settings > Your apps > Web app)
-   ========================================================= */
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCo_tUSBQHNuR12yGN9UZHl7cKK3RwQjQc",
   authDomain: "annidhomiyah-web.firebaseapp.com",
+  databaseURL: "https://annidhomiyah-web-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "annidhomiyah-web",
   storageBucket: "annidhomiyah-web.firebasestorage.app",
   messagingSenderId: "214286537603",
-  appId: "1:214286537603:web:58401921a39e332a36dcb6",
-  measurementId: "G-9Z7ZXBDGR4"
+  appId: "1:214286537603:web:58401921a39e332a36dcb6"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 const db = getDatabase(app);
 const auth = getAuth(app);
 
