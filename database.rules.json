@@ -1,0 +1,26 @@
+{
+  "rules": {
+    "settings": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "programs": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "news": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "gallery": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    "galleryCategories": {
+      ".read": true,
+      ".write": "auth != null"
+    },
+    ".read": false,
+    ".write": false
+  }
+}

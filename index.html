@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="pageTitle">Yayasan Pondok Pesantren An-Nidhomiyah</title>
+  <meta name="description" content="Yayasan Pondok Pesantren An-Nidhomiyah — Sidoarjo, sejak 1988." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-brand">
+    <img src="images/logo-placeholder.svg" alt="Logo" class="nav-logo-img" id="navLogo" />
+    <div class="nav-brand-text">An-Nidhomiyah<span>Ponpes · Sidoarjo</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Beranda</a></li>
+    <li><a href="#about">Tentang</a></li>
+    <li><a href="#programs">Program</a></li>
+    <li><a href="#news">Berita</a></li>
+    <li><a href="#gallery">Galeri</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" title="Ganti tema">
+      <i class="fa-solid fa-moon" id="themeIcon"></i>
+    </button>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <i class="fa-solid fa-xmark mobile-close" id="mobileClose"></i>
+  <a href="#hero">Beranda</a>
+  <a href="#about">Tentang</a>
+  <a href="#programs">Program</a>
+  <a href="#news">Berita</a>
+  <a href="#gallery">Galeri</a>
+  <a href="#contact">Kontak</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg" id="heroBg" style="background-image:url('images/hero-placeholder.svg')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-badge"><i class="fa-solid fa-mosque"></i> Sejak 20 Februari 1988</span>
+    <h1 id="heroTitle">Yayasan Pondok Pesantren<br>An-Nidhomiyah</h1>
+    <p class="hero-sub" id="heroSub">Melanjutkan perjuangan menebar ilmu dan membina umat, di bawah asuhan KH. Badrus Sholeh Syakur.</p>
+    <div class="hero-cta-row">
+      <a href="#about" class="btn btn-primary">Tentang Kami <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="#contact" class="btn btn-outline">Hubungi Kami</a>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">SCROLL</div>
+</section>
+
+<!-- ===== ABOUT / SEJARAH ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-photo-wrap ornate-frame">
+        <img src="images/founder-placeholder.svg" alt="Pengasuh" class="about-photo" id="founderPhoto" />
+        <div class="about-founder-tag">
+          <strong id="founderName">KH. Badrus Sholeh Syakur</strong>
+          <span>Pengasuh Pondok Pesantren</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <div class="eyebrow">Sejarah</div>
+        <h2 class="section-title">Menebar Ilmu Sejak 1988</h2>
+        <p id="aboutText">Yayasan Pondok Pesantren An-Nidhomiyah dibentuk pada 20 Februari 1988, di bawah kepemimpinan KH. Badrus Sholeh Syakur. Beliau meneruskan perjuangan para pendahulu yang telah melaksanakan pendidikan keagamaan kepada masyarakat.
+
+Sebagai seorang pendidik, beliau bersama keluarga membentuk yayasan pondok pesantren untuk memberikan sumbangsih pendidikan terhadap masyarakat sekitar — mulai dari pengajian rutin, pendidikan Al-Qur'an, pengajian hadis, tafsir, dan lain-lainnya.</p>
+        <div class="about-stats">
+          <div class="about-stat"><strong id="statYears">37+</strong><span>Tahun Mengabdi</span></div>
+          <div class="about-stat"><strong>1988</strong><span>Tahun Berdiri</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROGRAM PENDIDIKAN ===== -->
+<section id="programs">
+  <div class="container">
+    <div class="eyebrow reveal">Program</div>
+    <h2 class="section-title reveal">Program Pendidikan</h2>
+    <p class="section-lead reveal">Kegiatan keagamaan rutin yang kami selenggarakan untuk santri dan masyarakat sekitar.</p>
+    <div class="program-grid reveal" id="programGrid">
+      <!-- diisi via JS dari data default / Firebase -->
+    </div>
+  </div>
+</section>
+
+<!-- ===== BERITA ===== -->
+<section id="news">
+  <div class="container">
+    <div class="eyebrow reveal">Kabar Pondok</div>
+    <h2 class="section-title reveal">Berita &amp; Kegiatan</h2>
+    <p class="section-lead reveal">Kabar terbaru seputar kegiatan, acara, dan perkembangan pondok pesantren.</p>
+    <div class="news-grid reveal" id="newsGrid">
+      <div class="empty-state">Memuat berita…</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERI ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="eyebrow reveal">Dokumentasi</div>
+    <h2 class="section-title reveal">Galeri Kegiatan</h2>
+    <p class="section-lead reveal">Momen kegiatan santri, fasilitas, dan acara di lingkungan pondok.</p>
+    <div class="gallery-tabs reveal" id="galleryTabs"></div>
+    <div class="gallery-grid reveal" id="galleryGrid">
+      <div class="gallery-loading">Memuat galeri…</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== KONTAK ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="eyebrow">Kontak</div>
+        <h2 class="section-title">Hubungi Kami</h2>
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><strong>Alamat</strong><span id="contactAddress">Jl. Raya Ngelom No.179, Ngelom, Kec. Taman, Kabupaten Sidoarjo, Jawa Timur 61257</span></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-brands fa-instagram"></i>
+            <div><strong>Instagram</strong><a href="https://www.instagram.com/ponpes.annidhomiyah/" target="_blank" id="contactIg">@ponpes.annidhomiyah</a></div>
+          </div>
+          <div class="contact-info-item">
+            <i class="fa-brands fa-facebook"></i>
+            <div><strong>Facebook</strong><a href="https://www.facebook.com/ponpes.annidhomiyah/" target="_blank" id="contactFb">ponpes.annidhomiyah</a></div>
+          </div>
+        </div>
+        <div class="contact-socials" id="contactSocials">
+          <a href="https://www.instagram.com/ponpes.annidhomiyah/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/ponpes.annidhomiyah/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="contact-map reveal">
+        <iframe id="contactMapFrame" src="https://maps.google.com/maps?q=Jl.%20Raya%20Ngelom%20No.179%2C%20Sidoarjo&t=&z=15&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p><strong>Yayasan Pondok Pesantren An-Nidhomiyah</strong> &copy; <span id="footerYear"></span>. Seluruh hak cipta dilindungi.</p>
+</footer>
+
+<!-- ===== LIGHTBOX (galeri) ===== -->
+<div class="lightbox hidden" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></div>
+  <div class="lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></div>
+  <img id="lightboxImg" src="" alt="" />
+  <div class="lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></div>
+</div>
+
+<!-- ===== NEWS DETAIL MODAL ===== -->
+<div class="news-modal hidden" id="newsModal">
+  <div class="news-modal-box">
+    <div class="news-modal-close" id="newsModalClose"><i class="fa-solid fa-xmark"></i></div>
+    <img class="news-modal-img" id="newsModalImg" src="" alt="" />
+    <div class="news-modal-body">
+      <span class="news-date" id="newsModalDate"></span>
+      <h3 id="newsModalTitle"></h3>
+      <p class="news-content" id="newsModalContent"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ADMIN FAB ===== -->
+<div class="admin-fab" id="adminFab" title="Admin"><i class="fa-solid fa-lock"></i></div>
+
+<!-- ===== ADMIN PANEL ===== -->
+<div class="admin-overlay hidden" id="adminOverlay">
+  <div class="admin-panel">
+    <div class="admin-panel-header">
+      <h3>Dashboard Admin</h3>
+      <div class="admin-close" id="adminClose"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+
+    <!-- LOGIN STATE -->
+    <div class="admin-login" id="adminLoginBox">
+      <i class="fa-solid fa-mosque"></i>
+      <h4>Masuk sebagai Admin</h4>
+      <p>Login menggunakan akun yang sudah didaftarkan di Firebase Authentication.</p>
+      <div class="field">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="admin@annidhomiyah.id" />
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="••••••••" />
+      </div>
+      <button class="btn-admin btn-block" id="loginBtn"><i class="fa-solid fa-right-to-bracket"></i> Masuk</button>
+      <p id="loginError" style="color:var(--danger); font-size:0.82rem; display:none;"></p>
+    </div>
+
+    <!-- DASHBOARD STATE -->
+    <div id="adminDashboard" style="display:none;">
+      <div class="admin-tabs">
+        <div class="admin-tab active" data-tab="profil">Profil &amp; Hero</div>
+        <div class="admin-tab" data-tab="program">Program</div>
+        <div class="admin-tab" data-tab="berita">Berita</div>
+        <div class="admin-tab" data-tab="galeri">Galeri</div>
+        <div class="admin-tab" data-tab="kontak">Kontak</div>
+        <div class="admin-tab" data-tab="akun">Akun</div>
+      </div>
+
+      <!-- TAB: PROFIL & HERO -->
+      <div class="admin-section active" id="tab-profil">
+        <h4>Logo</h4>
+        <label class="file-drop" id="logoDrop">
+          <img id="logoPreview" src="" style="display:none;" />
+          <span id="logoDropText"><i class="fa-solid fa-upload"></i> Klik untuk unggah logo</span>
+          <input type="file" id="logoInput" accept="image/*" />
+        </label>
+
+        <div class="admin-divider"></div>
+        <h4>Foto Latar Hero</h4>
+        <label class="file-drop" id="heroDrop">
+          <img id="heroPreview" src="" style="display:none;" />
+          <span id="heroDropText"><i class="fa-solid fa-upload"></i> Klik untuk unggah foto hero</span>
+          <input type="file" id="heroInput" accept="image/*" />
+        </label>
+
+        <div class="admin-divider"></div>
+        <h4>Teks Hero</h4>
+        <div class="field"><label>Judul Hero</label><input type="text" id="fHeroTitle" /></div>
+        <div class="field"><label>Sub-judul Hero</label><textarea id="fHeroSub"></textarea></div>
+
+        <div class="admin-divider"></div>
+        <h4>Profil &amp; Sejarah</h4>
+        <div class="field"><label>Nama Yayasan</label><input type="text" id="fOrgName" /></div>
+        <div class="field"><label>Nama Pengasuh</label><input type="text" id="fFounderName" /></div>
+        <div class="field"><label>Teks Sejarah / Tentang</label><textarea id="fAboutText" style="min-height:160px;"></textarea></div>
+        <div class="field-row">
+          <div class="field"><label>Tahun Berdiri</label><input type="text" id="fYearFounded" /></div>
+          <div class="field"><label>Label "Tahun Mengabdi"</label><input type="text" id="fYearsActive" /></div>
+        </div>
+        <label class="file-drop" id="founderDrop" style="margin-bottom:1rem;">
+          <img id="founderPreview" src="" style="display:none;" />
+          <span id="founderDropText"><i class="fa-solid fa-upload"></i> Foto pengasuh (opsional)</span>
+          <input type="file" id="founderInput" accept="image/*" />
+        </label>
+
+        <button class="btn-admin btn-block" id="saveProfilBtn"><i class="fa-solid fa-check"></i> Simpan Perubahan</button>
+      </div>
+
+      <!-- TAB: PROGRAM -->
+      <div class="admin-section" id="tab-program">
+        <h4>Tambah Program</h4>
+        <div class="field"><label>Nama Program</label><input type="text" id="pTitle" placeholder="Pengajian Rutin" /></div>
+        <div class="field"><label>Deskripsi Singkat</label><textarea id="pDesc" placeholder="Kajian kitab kuning setiap ba'da Maghrib"></textarea></div>
+        <div class="field">
+          <label>Ikon</label>
+          <select id="pIcon">
+            <option value="fa-solid fa-book-quran">Al-Qur'an</option>
+            <option value="fa-solid fa-book">Kitab / Hadis</option>
+            <option value="fa-solid fa-mosque">Mushola / Ibadah</option>
+            <option value="fa-solid fa-people-group">Pengajian Umum</option>
+            <option value="fa-solid fa-graduation-cap">Pendidikan Formal</option>
+            <option value="fa-solid fa-scroll">Tafsir</option>
+          </select>
+        </div>
+        <button class="btn-admin btn-block" id="addProgramBtn"><i class="fa-solid fa-plus"></i> Tambah Program</button>
+        <div class="admin-divider"></div>
+        <h4>Daftar Program</h4>
+        <div id="programList"></div>
+      </div>
+
+      <!-- TAB: BERITA -->
+      <div class="admin-section" id="tab-berita">
+        <h4 id="newsFormTitle">Tambah Berita</h4>
+        <input type="hidden" id="nEditId" />
+        <div class="field"><label>Judul Berita</label><input type="text" id="nTitle" /></div>
+        <div class="field"><label>Tanggal</label><input type="date" id="nDate" /></div>
+        <div class="field"><label>Ringkasan</label><textarea id="nExcerpt" placeholder="Ringkasan singkat untuk kartu berita"></textarea></div>
+        <div class="field"><label>Isi Berita Lengkap</label><textarea id="nContent" style="min-height:120px;"></textarea></div>
+        <label class="file-drop" id="newsDrop" style="margin-bottom:1rem;">
+          <img id="newsPreview" src="" style="display:none;" />
+          <span id="newsDropText"><i class="fa-solid fa-upload"></i> Foto berita</span>
+          <input type="file" id="newsInput" accept="image/*" />
+        </label>
+        <button class="btn-admin btn-block" id="saveNewsBtn"><i class="fa-solid fa-plus"></i> Publikasikan Berita</button>
+        <button class="btn-admin-outline btn-block" id="cancelNewsEditBtn" style="display:none; margin-top:0.5rem;">Batal Edit</button>
+        <div class="admin-divider"></div>
+        <h4>Daftar Berita</h4>
+        <div id="newsList"></div>
+      </div>
+
+      <!-- TAB: GALERI -->
+      <div class="admin-section" id="tab-galeri">
+        <h4>Kelola Kategori</h4>
+        <div class="field-row" style="align-items:end;">
+          <div class="field"><label>Nama Kategori Baru</label><input type="text" id="gCatName" placeholder="Kegiatan Santri" /></div>
+        </div>
+        <button class="btn-admin" id="addCatBtn" style="margin-bottom:1rem;"><i class="fa-solid fa-plus"></i> Tambah Kategori</button>
+        <div id="catList" style="margin-bottom:1.2rem;"></div>
+
+        <div class="admin-divider"></div>
+        <h4>Tambah Foto</h4>
+        <div class="field">
+          <label>Kategori</label>
+          <select id="gCatSelect"></select>
+        </div>
+        <div class="field"><label>Judul Foto</label><input type="text" id="gTitle" /></div>
+        <label class="file-drop" id="galleryDrop" style="margin-bottom:1rem;">
+          <img id="galleryPreview" src="" style="display:none;" />
+          <span id="galleryDropText"><i class="fa-solid fa-upload"></i> Pilih foto</span>
+          <input type="file" id="galleryInput" accept="image/*" />
+        </label>
+        <button class="btn-admin btn-block" id="addPhotoBtn"><i class="fa-solid fa-plus"></i> Tambah Foto</button>
+        <div class="admin-divider"></div>
+        <h4>Daftar Foto</h4>
+        <div id="galleryManageList"></div>
+      </div>
+
+      <!-- TAB: KONTAK -->
+      <div class="admin-section" id="tab-kontak">
+        <h4>Alamat &amp; Peta</h4>
+        <div class="field"><label>Alamat Lengkap</label><textarea id="cAddress"></textarea></div>
+        <div class="field"><label>Query Google Maps (nama jalan/kota)</label><input type="text" id="cMapQuery" placeholder="Jl. Raya Ngelom No.179, Sidoarjo" /></div>
+        <div class="admin-divider"></div>
+        <h4>Sosial Media</h4>
+        <div class="field"><label>Link Instagram</label><input type="text" id="cIg" /></div>
+        <div class="field"><label>Link Facebook</label><input type="text" id="cFb" /></div>
+        <div class="field"><label>Nomor WhatsApp (opsional)</label><input type="text" id="cWa" placeholder="6281234567890" /></div>
+        <button class="btn-admin btn-block" id="saveContactBtn"><i class="fa-solid fa-check"></i> Simpan Kontak</button>
+      </div>
+
+      <!-- TAB: AKUN -->
+      <div class="admin-section" id="tab-akun">
+        <h4>Ganti Password</h4>
+        <p style="color:var(--text3); font-size:0.82rem; margin-bottom:1rem;">Demi keamanan, Anda mungkin perlu login ulang sebelum mengganti password.</p>
+        <div class="field"><label>Password Baru</label><input type="password" id="newPassword" /></div>
+        <button class="btn-admin btn-block" id="changePasswordBtn"><i class="fa-solid fa-key"></i> Ubah Password</button>
+        <div class="admin-divider"></div>
+        <button class="btn-admin-danger btn-block" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Keluar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="admin-toast" id="adminToast"></div>
+
+<script type="module" src="js/firebase.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

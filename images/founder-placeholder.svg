@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <rect width="400" height="500" fill="#EFE5CC"/>
+  <circle cx="200" cy="190" r="70" fill="#DECFA0"/>
+  <rect x="90" y="280" width="220" height="180" rx="30" fill="#DECFA0"/>
+  <text x="200" y="470" font-family="Georgia, serif" font-size="16" fill="#8C9075" text-anchor="middle">Foto Pengasuh</text>
+</svg>
