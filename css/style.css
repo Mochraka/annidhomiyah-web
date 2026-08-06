@@ -333,6 +333,18 @@ section { padding: 6.5rem 0; position: relative; }
 /* ===== FOOTER ===== */
 footer { background: var(--deep2); color: #A6AB8C; padding: 2.4rem 0; text-align: center; font-size: 0.85rem; }
 footer strong { color: #EDE6CE; }
+footer .footer-credit { margin-top: 0.5rem; font-size: 0.78rem; color: #7C8168; }
+
+/* ===== PASSWORD SHOW/HIDE ===== */
+.password-wrap { position: relative; display: flex; align-items: center; }
+.password-wrap input { width: 100%; padding-right: 2.6rem; }
+.password-toggle {
+  position: absolute; right: 0.7rem; top: 50%; transform: translateY(-50%);
+  color: var(--text3); font-size: 0.95rem; width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center; border-radius: 6px;
+  transition: color var(--transition);
+}
+.password-toggle:hover { color: var(--accent); }
 
 /* ===== ADMIN TOGGLE BUTTON ===== */
 .admin-fab {

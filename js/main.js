@@ -69,6 +69,20 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
+/* ===== PASSWORD SHOW/HIDE TOGGLE ===== */
+function bindPasswordToggle(inputId, btnId) {
+  const input = document.getElementById(inputId);
+  const btn = document.getElementById(btnId);
+  if (!input || !btn) return;
+  btn.addEventListener('click', () => {
+    const showing = input.type === 'text';
+    input.type = showing ? 'password' : 'text';
+    btn.innerHTML = showing ? '<i class="fa-solid fa-eye"></i>' : '<i class="fa-solid fa-eye-slash"></i>';
+  });
+}
+bindPasswordToggle('loginPassword', 'loginPasswordToggle');
+bindPasswordToggle('newPassword', 'newPasswordToggle');
+
 /* ===== TOAST ===== */
 function toast(msg) {
   const t = document.getElementById('adminToast');
